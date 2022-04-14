@@ -7,22 +7,22 @@
   <meta name="description" content="Как научиться учиться. Популярные методики." />
   <meta name="keywords" content="метод Фейнмана, метод Джоша Кауфмана" />
   <meta name="author" content="Владимир Сальников" />
-  <link rel="stylesheet" href="styles/normalize.css">
-  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="./styles/normalize.css">
+  <link rel="stylesheet" href="./styles/style.css">
   <title>Научиться учиться</title>
 </head>
 <body>
   <div class="page">
     <header class="header">
       <img src="./images/logo_place_header.svg" alt="логотип" class="logo logo_place_header">
-      <h1 class="heder__title">Научиться учиться</h1>
-      <p class="heder__subtitle">Какие современные и эффективные подходы к обучению вы можете использовать 
-        в своей жизни? <a href="#" class="link">Узнать &rarr;</a></p>
+      <h1 class="header__title">Научиться учиться</h1>
+      <p class="header__subtitle">Какие современные и эффективные подходы к обучению вы можете использовать 
+        в своей жизни? <a href="#" class="header__link">Узнать &rarr;</a></p>
       <img src="./images/header-image.png" alt="Учись учиться" class="header__main-illustration"> 
       <div class="header__square-pic"></div>
     </header>
   
-    <content class="content">
+    <main class="content">
       <section class="description">
         <div class="two-columns">
           <h2 class="two-columns__brief">
@@ -48,8 +48,8 @@
         </div>
       </section>
       <section class="digits">
-        <h2 class="digits__section-title">Цифры и факты</h2>
-        <p class="digits__section-subtitle">Про учёбу и мозг</p>
+        <h2 class="section-title">Цифры и факты</h2>
+        <p class="section-subtitle">Про учёбу и мозг</p>
         <div class="table">
           <div class="table__cell">
             <h3 class="table__heading">86 миллиардов</h3>
@@ -109,18 +109,16 @@
           </div>
         </div>
       </section>
-      <section class="feynman" title="Это сам Фейнман">
-        <!-- для background-image в CSS нельзя применить alt, по этому использован title
-        https://stackoverflow.com/questions/4216035/css-background-image-alt-attribute  -->
+      <section class="feynman">
         <h2 class="feynman__title">Метод Фейнмана</h2>
         <p class="feynman__subtitle">Выучить и не забыть.</p>
         <a href="#" class="feynman__link">Подробнее &rarr;</a>
       </section>
       <section class="kaufman">
-        <h2 class="kaufman__section-title_theme_dark">Принципы обучения</h2>
-        <p class="kaufman__section-subtitle_theme_dark">от Джоша Кауфмана</p>
-        <img src="./images/kaufman-triangle.svg" alt="треугольник" class="kaufman__triangle">
-        <div class="table_theme_dark">
+        <h2 class="section-title section-title_theme_dark">Принципы обучения</h2>
+        <p class="section-subtitle section-subtitle_theme_dark">от Джоша Кауфмана</p>
+        <div class="kaufman__triangle"></div>
+        <div class="table table_theme_dark">
           <div class="table__cell_theme_dark">
             <h3 class="table__heading_theme_dark">1</h3>
               <p class="table__text_theme_dark">
@@ -183,29 +181,29 @@
           </div>
         </div>
       </section>
-    </content>
+    </main>
     <footer class="footer">
       <div class="footer__columns">
-      <div class="footer__column_content-copyright">
-        <img src="./images/logo_place_footer.svg" alt="логотип" class="logo logo_place_footer">
-        <div class="footer__author">&copy; Владимир Сальников</div>
+      <div class="footer__column footer__column_content_copyright">
+        <img src="./images/logo_place_footer.svg" alt="логотип" class="logo_place_footer">
+        <div class="footer__column footer__author">&copy; Владимир Сальников</div>
       </div>
-      <div class="footer__column_content-info">
-        <div class="footer__column-heading">О Практикуме</div>
-        <div class="footer__column-links">
-          <p class="footer_link"><a href="#" class="footer_link-none">Главная</a></p>
-          <p class="footer_link"><a href="#" class="footer_link-none">Концепция</a></p>
-          <p class="footer_link"><a href="#" class="footer_link-none">Наставники</a></p>
-        </div>
-      </div>
-      <div class="footer__column_content-social">
-        <div class="footer__social-icon">Соцсети</div>
-        <div class="footer__column-link">
-          <p class="footer_link"><a href="#" class="footer_link-none"><img src="./images/facebook_color_white.svg" alt="Фейсбук" class="logo_social">Facebook</a></p>
-          <p class="footer_link"><a href="#" class="footer_link-none"><img src="./images/vk_color_white.svg" alt="ВКонтакте" class="logo_social">ВКонтакте</a></p>
-          <p class="footer_link"><a href="#" class="footer_link-none"><img src="./images/instagram_color_white.svg" alt="Инстаграм" class="logo_social">instagram</a></p>
-        </div>
-      </div>
+      <nav class="footer__column_content_info">
+        <h3 class="footer__column footer__column-heading">О Практикуме</h3>
+        <ul class="footer__column footer__column-links">
+          <li><a href="#" class="footer__column-link">Главная</a></li>
+          <li><a href="#" class="footer__column-link">Концепция</a></li>
+          <li><a href="#" class="footer__column-link">Наставники</a></li>
+        </ul>
+      </nav>
+      <nav class="footer__column_content_social">
+        <h3 class="footer__column footer__column-heading">Соцсети</h3>
+        <ul class="footer__column footer__column-links">
+          <li><a href="#" class="footer__column-link"><img src="./images/facebook_color_white.svg" alt="Фейсбук" class="footer__social-icon">Facebook</a></li>
+          <li><a href="#" class="footer__column-link"><img src="./images/vk_color_white.svg" alt="ВКонтакте" class="footer__social-icon">ВКонтакте</a></li>
+          <li><a href="#" class="footer__column-link"><img src="./images/instagram_color_white.svg" alt="Инстаграм" class="footer__social-icon">instagram</a></li>
+        </ul>
+      </nav>
       </div>
     </footer>
   </div>
