@@ -18,10 +18,17 @@
   margin: auto;
   position: relative;
   overflow: hidden;
+  align-items: center;
+}
+
+.logo {
+  width: 228px;
+  height: 32px;
 }
 
 .logo_place_header {
   position: absolute;
+  background-image: url(../images/logo_place_header.svg);
   top: 30px;
   left: 64px;
 }
@@ -29,12 +36,9 @@
 .header__title {
   font-weight: bold;
   font-size: 102px;
-  width: 730px;
+  max-width: 730px;
   line-height: 96px;
-  display: flex;
-  flex-direction: row;
   margin: 0 0 0 64px;
-  align-items: center;
   z-index: 2;  
 }
 
@@ -57,7 +61,7 @@
 
 .header__main-illustration {
   height: 608px;
-  width: 760px;
+  width: 765px;
   position: absolute;
   bottom: 0;
   right: 0;
@@ -154,7 +158,6 @@
   margin-top: 60px;
   flex-wrap: wrap;
   align-content: flex-start;
-
 }
 
 .table__heading {
@@ -229,10 +232,14 @@
 .section-title_theme_dark {
   margin: 90px auto 0 auto;
   color: white;
+  z-index: 1;
+  position: relative;
 }
 
 .section-subtitle_theme_dark {
   color: white;
+  z-index: 1;
+  position: relative;
 }
 
 .kaufman__triangle {
@@ -243,6 +250,7 @@
   z-index: 0;
   height: 877px;
 	width: 877px;
+  background-size: cover;
 }
 
 .table_theme_dark {
@@ -309,8 +317,7 @@ h3 {
 }
 
 .logo_place_footer {
-  width: 228px;
-  height: 32px;
+  background-image: url(../images/logo_place_footer.svg);
 }
 
 .footer__author {
@@ -319,7 +326,8 @@ h3 {
 }
 
 .footer__column_content_info {
-
+  font-size: 18px;
+  line-height: 30px;
 }
 
 .footer__column-heading {
@@ -334,7 +342,8 @@ h3 {
 }
 
 .footer__column_content_social {
-
+  font-size: 18px;
+  line-height: 30px;
 }
 
 .footer__social-icon {
@@ -347,8 +356,5 @@ h3 {
   margin: 0;
   text-decoration: none;
   color: white;
-  font-size: 18px;
-  line-height: 30px;
   font-weight: normal;
 }
-
