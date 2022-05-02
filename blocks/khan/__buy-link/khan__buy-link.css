@@ -6,6 +6,9 @@
   cursor: pointer;
   opacity: 1;
   font-weight: normal;
+  display: flex;
+  align-self: flex-start;
+  justify-content: flex-start;
 }
   
 .khan__buy-link:hover {
